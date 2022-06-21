@@ -121,20 +121,18 @@ def get_logs(req_path):
 def retrain_model():
     return render_template("train1.html")
 
-@app.route('/stream', methods=['POST', 'GET'])
-@cross_origin()
 
 
-def stream():
-    try:
-        def generate():
-            with open(log_file_path, "r") as f:
-                while True:
-                    yield f.read()
-                    sleep(0.1)
-        return app.response_class(generate(), mimetype="text/plain")
-    except Exception as e:
-        print(e)
+# def stream():
+#     try:
+#         def generate():
+#             with open(log_file_path, "r") as f:
+#                 while True:
+#                     yield f.read()
+#                     sleep(0.1)
+#         return app.response_class(generate(), mimetype="text/plain")
+#     except Exception as e:
+#         print(e)
 
 @app.route("/predict", methods=['POST'])
 @cross_origin()
@@ -209,4 +207,4 @@ def trainRouteClient():
 port = int(os.getenv("PORT", 5000))
 if __name__ == "__main__":
     # port = 5000
-    app.run(host='0.0.0.0',port=port, debug=False)
+    app.run(host='127.0.0.1',port=port, debug=False)

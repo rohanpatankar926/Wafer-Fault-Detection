@@ -95,9 +95,7 @@ class Raw_Data_validation:
                                       Output: None
                                       On Failure: OSError
 
-                                       Written By: iNeuron Intelligence
-                                      Version: 1.0
-                                      Revisions: None
+                        
 
                                               """
 
@@ -148,11 +146,7 @@ class Raw_Data_validation:
                                             Method Name: deleteExistingBadDataTrainingFolder
                                             Description: This method deletes the directory made to store the bad Data.
                                             Output: None
-                                            On Failure: OSError
-
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
+                
 
                                                     """
 
