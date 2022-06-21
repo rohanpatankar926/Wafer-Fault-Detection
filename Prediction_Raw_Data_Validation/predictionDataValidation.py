@@ -35,9 +35,7 @@ class Prediction_Data_validation:
                                 Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
                                 On Failure: Raise ValueError,KeyError,Exception
 
-                                 Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
+                         
 
                                         """
         try:
@@ -88,9 +86,6 @@ class Prediction_Data_validation:
                                       Output: Regex pattern
                                       On Failure: None
 
-                                       Written By: iNeuron Intelligence
-                                      Version: 1.0
-                                      Revisions: None
 
                                               """
         regex = "['wafer']+['\_'']+[\d_]+[\d]+\.csv"

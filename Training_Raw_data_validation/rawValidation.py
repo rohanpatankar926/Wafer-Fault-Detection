@@ -17,10 +17,6 @@ class Raw_Data_validation:
     """
              This class shall be used for handling all the validation done on the Raw Training Data!!.
 
-             Written By: iNeuron Intelligence
-             Version: 1.0
-             Revisions: None
-
              """
 
     def __init__(self,path):
@@ -35,10 +31,6 @@ class Raw_Data_validation:
                         Description: This method extracts all the relevant information from the pre-defined "Schema" file.
                         Output: LengthOfDateStampInFile, LengthOfTimeStampInFile, column_names, Number of Columns
                         On Failure: Raise ValueError,KeyError,Exception
-
-                         Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
 
                                 """
         try:
@@ -88,9 +80,6 @@ class Raw_Data_validation:
                                 Output: Regex pattern
                                 On Failure: None
 
-                                 Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
 
                                         """
         regex = "['wafer']+['\_'']+[\d_]+[\d]+\.csv"
@@ -135,11 +124,6 @@ class Raw_Data_validation:
                                                           loaded in the DB,deleting the directory ensures space optimization.
                                             Output: None
                                             On Failure: OSError
-
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
-
                                                     """
 
         try:
@@ -195,9 +179,6 @@ class Raw_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
 
                                                     """
         now = datetime.now()
@@ -242,9 +223,6 @@ class Raw_Data_validation:
                     Output: None
                     On Failure: Exception
 
-                     Written By: iNeuron Intelligence
-                    Version: 1.0
-                    Revisions: None
 
                 """
 
@@ -298,9 +276,6 @@ class Raw_Data_validation:
                           Output: None
                           On Failure: Exception
 
-                           Written By: iNeuron Intelligence
-                          Version: 1.0
-                          Revisions: None
 
                       """
         try:
@@ -335,9 +310,6 @@ class Raw_Data_validation:
                                   Output: None
                                   On Failure: Exception
 
-                                   Written By: iNeuron Intelligence
-                                  Version: 1.0
-                                  Revisions: None
 
                               """
         try:
