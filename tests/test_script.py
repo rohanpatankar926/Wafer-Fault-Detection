@@ -47,6 +47,11 @@ class TestToPerform(unittest.TestCase):
         print(response5)
         self.assertEqual(response5.status_code, 200)
         
+    def test_page6(self):
+        response6 = self.app.get('/train', follow_redirects=True)
+        print(response6)
+        self.assertEqual(response6.status_code, 200)
+        
 
 if __name__ == '__main__':
     unittest.main()
