@@ -46,11 +46,7 @@ class TestToPerform(unittest.TestCase):
         response5 = self.app.get('/stream/train', follow_redirects=True)
         print(response5)
         self.assertEqual(response5.status_code, 200)
-        
-    def test_page7(self):
-        response7 = self.app.get('/train', follow_redirects=True)
-        print(response7)
-        self.assertEqual(response7.status_code, 200)
+
         
 
 if __name__ == '__main__':
