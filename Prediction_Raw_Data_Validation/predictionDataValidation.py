@@ -16,9 +16,6 @@ class Prediction_Data_validation:
     """
                This class shall be used for handling all the validation done on the Raw Prediction Data!!.
 
-               Written By: iNeuron Intelligence
-               Version: 1.0
-               Revisions: None
 
                """
 
@@ -101,10 +98,6 @@ class Prediction_Data_validation:
                                         Output: None
                                         On Failure: OSError
 
-                                         Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
-
                                                 """
         try:
             path = os.path.join("Prediction_Raw_Files_Validated/", "Good_Raw/")
@@ -129,9 +122,7 @@ class Prediction_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
+                                             
 
                                                     """
         try:
@@ -155,11 +146,8 @@ class Prediction_Data_validation:
                                             Method Name: deleteExistingBadDataTrainingFolder
                                             Description: This method deletes the directory made to store the bad Data.
                                             Output: None
-                                            On Failure: OSError
-
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
+                              
+                                     
 
                                                     """
 
@@ -187,9 +175,6 @@ class Prediction_Data_validation:
                                             Output: None
                                             On Failure: OSError
 
-                                             Written By: iNeuron Intelligence
-                                            Version: 1.0
-                                            Revisions: None
 
                                                     """
         now = datetime.now()
@@ -232,9 +217,7 @@ class Prediction_Data_validation:
             Output: None
             On Failure: Exception
 
-             Written By: iNeuron Intelligence
-            Version: 1.0
-            Revisions: None
+   
 
         """
         # delete the directories for good and bad data in case last run was unsuccessful and folders were not deleted.
@@ -285,9 +268,6 @@ class Prediction_Data_validation:
                     Output: None
                     On Failure: Exception
 
-                     Written By: iNeuron Intelligence
-                    Version: 1.0
-                    Revisions: None
 
              """
         try:
@@ -328,11 +308,7 @@ class Prediction_Data_validation:
                                                If all the values are missing, the file is not suitable for processing.
                                                SUch files are moved to bad raw data.
                                   Output: None
-                                  On Failure: Exception
-
-                                   Written By: iNeuron Intelligence
-                                  Version: 1.0
-                                  Revisions: None
+                               
 
                               """
         try:

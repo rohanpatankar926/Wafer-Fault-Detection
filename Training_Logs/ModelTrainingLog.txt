@@ -26,3 +26,31 @@
 2022-06-22/10:31:16		Exception occured in get_best_model method of the Model_Finder class. Exception message:  
 2022-06-22/10:31:16		Model Selection Failed. Exited the get_best_model method of the Model_Finder class
 2022-06-22/10:31:16		Unsuccessful End of Training
+2022-06-24/23:11:17		Start of Training
+2022-06-24/23:11:17		Entered the get_data method of the Data_Getter class
+2022-06-24/23:11:19		Data Load Successful.Exited the get_data method of the Data_Getter class
+2022-06-24/23:11:19		Entered the remove_columns method of the Preprocessor class
+2022-06-24/23:11:19		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-24/23:11:19		Entered the separate_label_feature method of the Preprocessor class
+2022-06-24/23:11:19		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2022-06-24/23:11:19		Entered the is_null_present method of the Preprocessor class
+2022-06-24/23:11:19		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2022-06-24/23:11:19		Entered the impute_missing_values method of the Preprocessor class
+2022-06-24/23:16:33		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2022-06-24/23:16:33		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-24/23:16:35		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2022-06-24/23:16:35		Entered the remove_columns method of the Preprocessor class
+2022-06-24/23:16:35		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2022-06-24/23:16:35		Entered the elbow_plot method of the KMeansClustering class
+2022-06-24/23:17:15		The optimum number of clusters is: 3 . Exited the elbow_plot method of the KMeansClustering class
+2022-06-24/23:17:15		Entered the create_clusters method of the KMeansClustering class
+2022-06-24/23:17:18		Entered the save_model method of the File_Operation class
+2022-06-24/23:17:18		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2022-06-24/23:17:18		succesfully created 3clusters. Exited the create_clusters method of the KMeansClustering class
+2022-06-24/23:17:18		Entered the get_best_model method of the Model_Finder class
+2022-06-24/23:17:18		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-24/23:17:25		Exception occured in get_best_params_for_xgboost method of the Model_Finder class. Exception message:  Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [-1  1]
+2022-06-24/23:17:25		XGBoost Parameter tuning  failed. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2022-06-24/23:17:25		Exception occured in get_best_model method of the Model_Finder class. Exception message:  
+2022-06-24/23:17:25		Model Selection Failed. Exited the get_best_model method of the Model_Finder class
+2022-06-24/23:17:25		Unsuccessful End of Training
